@@ -6,8 +6,8 @@ import java.io.IOException;
 public class SplitStrings {
     public static void main(String[] args) throws IOException {
 
-        BufferedReader br = new BufferedReader(new FileReader("le.txt"));
-        String str = br.readLine();
+        BufferedReader myBr = new BufferedReader(new FileReader("le.txt"));
+        String str = myBr.readLine();
         String specialCharacters=" !#$%&'()*+,-./:;<=>?@[]^_`{|}";
         while(str != null) {
             String[] split = str.split(" ");
@@ -29,7 +29,7 @@ public class SplitStrings {
                 }
                 System.out.println();
             }
-            str = br.readLine();
+            str = myBr.readLine();
         }
     }
 }
