@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class SplitStrings {
+public class SpltStrings {
     public static void main(String[] args) throws IOException {
 
         BufferedReader myBr = new BufferedReader(new FileReader("le.txt"));
