@@ -12,18 +12,18 @@ public class SplitStrings {
         while(str != null) {
             String[] split = str.split(" ");
             for(int i = 0 ; i < split.length ; i++) {
-                String lex = split[i];
+                String sptle = split[i];
                 int count = 0;
-                while(count < lex.length()) {
-                    if(specialCharacters.contains(Character.toString(lex.charAt(count)))) {
-                        if(!specialCharacters.contains(Character.toString(lex.charAt(count-1)))){
+                while(count < sptle.length()) {
+                    if(specialCharacters.contains(Character.toString(sptle.charAt(count)))) {
+                        if(!specialCharacters.contains(Character.toString(sptle.charAt(count-1)))){
                             System.out.println();
                         }
 
-                        System.out.println(lex.charAt(count));
+                        System.out.println(sptle.charAt(count));
                     }
                     else{
-                        System.out.print(lex.charAt(count));
+                        System.out.print(sptle.charAt(count));
                     }
                     count++;
                 }
